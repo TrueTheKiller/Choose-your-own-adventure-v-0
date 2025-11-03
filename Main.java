@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Main
+import java.lang.*;
+public class Main extends ConsoleProgram
 {
     public void setInv(String[] inventory, int space, String item)
     {
@@ -153,8 +154,27 @@ public class Main
                     }
                     
                     //From here on there will always be an if at any time there is player input for the /inventory command, not the most efficient way but works for now.
-                    System.out.println("This is the end of project 2, there will be more in the future!");
-                    break;
+                    System.out.println("\nYou run outside and see a giant dragon! You haven't been noticed yet, but you're sure that if the dragon saw you you'd be killed immediately. How should you handle the next choice?\nShould you run away (1) or should you stay and fight (2)?");
+                    while(!ans.equals("1") || !ans.equals("2"))
+                    {
+                        ans = scnr.nextLine();
+                        if (ans.equals("1"))
+                        {
+                            System.out.println("\nYou run away, nothing special happens and you are safe.\n\nGood ending 1, You survived but that's about all anyone remembers you as, a survivor.");
+                            System.exit(0);
+                        }
+                        else if(ans.equals("2"))
+                        {
+                            System.out.println("You choose to stay and fight the dragon!");
+                            break;
+                        }
+                        else
+                        {
+                            System.out.println("Seems you've made a mistake! Don't worry you can always try again! remember the answer options are 1 (Run) and 2 (Fight)");
+                        }
+                    }
+                    System.out.println("You decide to fight the dragon, for now this is the end as this is just project 1 of semester 2, however there will be more in the future!");
+                    System.exit(0);
                 }
                 else
                 {
@@ -169,7 +189,6 @@ public class Main
             {
                 System.out.println("Seems like you may have made a mistake don't worry though you can always try again (Y/N)");
             }
-            break;
         }
         
     }
