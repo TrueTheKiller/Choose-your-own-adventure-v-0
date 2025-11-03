@@ -7,7 +7,7 @@ Description: This is an adventure of you, your struggles, and the struggles
 you have yet to face. This adventure follows you through a story you control.
 A story of your triumphant rise to the spotlight as you recover from the attack
 on your village from a dragon. Without spoiling too much you will forever be
-grateful and stronger because of some of the events that happened that day, while
+greatful and stronger because of some of the events that happened that day, while
 the other events will leave you forever scarred...
 
 Overview: This project is a simple choose your own adventure where the decisions
@@ -24,9 +24,9 @@ option in the menu that appears, it should be the third row option in the far le
 part of the menu.
 
 Alternative installation: For those who don't want to use the previous installation
-method the alternative requires some know-how when it comes to Java. The easiest way
+method the anternative requires some know-how when it comes to Java. The easiest way
 that I know of to install this is to find a program that will run java (an IDE) and
-paste all of the code in there in separate documents with the same names I have given
+paste all of the code in there in seperate documents with the same names I have given
 them. Java is picky so you will have to make sure that all of the names are exactly correct.
 This file specifically doesn't need to be in the program. The names of all required files in this
 program are as follows:
@@ -40,7 +40,7 @@ Main.java
 Randomizer.java
 
 Once you have successfully installed all of those files you will have to correct any code
-requiring a specific file name if you chose an alternative file. You will also
+requiring a specific file name if you chose an anternative file. You will also
 likely have to remove the "extends ConsoleProgram" part of the 
 MyProgram.java file OR Main.java file at the top. If you changed the file name you will have to replace "MyProgram" 
 with whatever you called it CAPS SENSATIVE.
@@ -80,7 +80,7 @@ only branch that leads to an ending is the 3rd question.
 
 Features I would like to add in the future: As the evilWizard file suggests there may eventually be
 combat with other characters, if I can figure it out I would like to add some way for the player
-to fight themselves from previous iterations, however, I believe that may have been copyrighted
+to fight themselves from previous itterations, however, I believe that may have been copyrighted
 by Nintendo so I'm not sure if I can do that. I would also like to add some form of a magic system
 but I'm not entirely sure how I would want that to work.
 
@@ -98,5 +98,9 @@ For the third project I decided to store the users items in an array and to allo
 choosing for those who are less creative. All names are gender neutral and while there are
 only 13 currently there will eventually be more.
 
+For the first project of semester 2 I've decided to just add another simple question, this time I've decided to use the already 
+existing ans variable, this way it should save some memory by deleting the previously used question answer. This should not 
+cause any problems but if it does please report it!
 
-THE INVENTORY COMMAND IS NOT BEING USED YET BUT WILL BE MOST LIKELY WITHIN THE NEXT FEW PROJECTS.Uploading README.md…]()
+
+THE INVENTORY COMMAND IS NOT BEING USED YET BUT WILL BE MOST LIKELY WITHIN THE NEXT FEW PROJECTS..Uploading README.md…]()
