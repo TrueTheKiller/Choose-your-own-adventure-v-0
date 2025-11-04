@@ -2,39 +2,9 @@ import java.util.Scanner;
 import java.lang.*;
 public class Main extends ConsoleProgram
 {
-    public void setInv(String[] inventory, int space, String item)
-    {
-        inventory[space] = item;
-    }
-    public String getInv(String[] inventory)
-    {
-        return "Weapon: " + inventory[0] + " Helm: " + inventory[1] + " Chest: " + inventory[2] + " Legs: " + inventory[3];
-    }
-    public String getInv(int space, String[] inventory)
-    {
-        if(space - 1 == 0)
-        {
-            return "Weapon: " + inventory[0];
-        }
-        else if(space - 1 == 1)
-        {
-            return "Helm: " + inventory[1];
-        }
-        else if(space - 1 == 2)
-        {
-            return "Chest: " + inventory[2];
-        }
-        else if(space - 1 == 3)
-        {
-            return "Legs: " + inventory[3];
-        }
-        else
-        {
-            return "too high or low, try again.";
-        }
-    }
     public void run()
     {
+        Inventory inv = new Inventory();
         Scanner scnr = new Scanner(System.in);
         System.out.println("This game is utilizing a system based on an anime called 'Ossan newbie adventurer' so if you know anything about that you may have a small advantage in this journey.\n");
         System.out.print("Hello and welcome to this game, we'll start with something simple. \nWhat is your name? (Leave blank for random)");
@@ -129,19 +99,19 @@ public class Main extends ConsoleProgram
                         if(weaponOption1.equals("1"))
                         {
                             System.out.println("You have chosen the axe! You now have access to the /inventory command");
-                            inventory[0] = "Axe";
+                            inv.setItem(0, "Axe");
                             break;
                         }
                         else if(weaponOption1.equals("2"))
                         {
                             System.out.println("You have chosen the sword! You now have access to the /inventory command");
-                            inventory[0] = "Sword";
+                            inv.setItem(0, "Sword");
                             break;
                         }
                         else if(weaponOption1.equals("3"))
                         {
                             System.out.println("You have chosen the shield! You now have access to the /inventory command");
-                            inventory[0] = "Shield";
+                            inv.setItem(0, "Shield");
                             break;
                         }
                         else
@@ -167,6 +137,10 @@ public class Main extends ConsoleProgram
                         {
                             System.out.println("You choose to stay and fight the dragon!");
                             break;
+                        }
+                        else if(ans.toLowerCase().equals("/inventory"))
+                        {
+                            System.out.println(inv.getInventory());
                         }
                         else
                         {
