@@ -1,7 +1,4 @@
-[README.md](https://github.com/user-attachments/files/23315507/README.md)# Choose-your-own-adventure-v-0
-
-
-[Title: The Strongest Adventurer
+Title: The Strongest Adventurer
 
 Description: This is an adventure of you, your struggles, and the struggles
 you have yet to face. This adventure follows you through a story you control.
@@ -100,7 +97,9 @@ only 13 currently there will eventually be more.
 
 For the first project of semester 2 I've decided to just add another simple question, this time I've decided to use the already 
 existing ans variable, this way it should save some memory by deleting the previously used question answer. This should not 
-cause any problems but if it does please report it!
+cause any problems but if it does please report it! I've also decided to add a class called Inventory to store the player's inventory,
+Since there will only ever be 1 player I'm not going to add a player class as I only need to store the information for the player that
+currently exists which can be done with variables.
 
 
-THE INVENTORY COMMAND IS NOT BEING USED YET BUT WILL BE MOST LIKELY WITHIN THE NEXT FEW PROJECTS..Uploading README.md…]()
+THE INVENTORY COMMAND IS NOT BEING USED YET BUT WILL BE MOST LIKELY WITHIN THE NEXT FEW PROJECTS.
